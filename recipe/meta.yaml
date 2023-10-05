@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -22,8 +22,8 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - pynmeagps >=1.0.28
-    - pyrtcm >=1.0.12
+    - pynmeagps >=1.0.29
+    - pyrtcm >=1.0.13
 
 test:
   imports:
