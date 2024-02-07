@@ -1,5 +1,5 @@
 {% set name = "pyubx2" %}
-{% set version = "1.2.36" %}
+{% set version = "1.2.37" %}
 
 package:
   name: {{ name|lower }}
@@ -7,8 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyubx2-{{ version }}.tar.gz
-  sha256: 3b592515ce1cfe0ac044a5ad7022064348e20d3e08db485d0f60e319014a9342
-
+  sha256: b40bf9e2dee55c9990f27ab464fa5c3d2c0c1979722fb3e9b5005f53161a4b80
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
@@ -22,8 +21,8 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - pynmeagps >=1.0.29
-    - pyrtcm >=1.0.14
+    - pynmeagps >=1.0.33
+    - pyrtcm >=1.0.15
 
 test:
   imports:
