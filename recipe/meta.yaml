@@ -1,5 +1,5 @@
 {% set name = "pyubx2" %}
-{% set version = "1.2.38" %}
+{% set version = "1.2.39" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyubx2-{{ version }}.tar.gz
-  sha256: 2e5d191d9858780ad7ae7ccab93e41371307dc513a27b3b119c5ced859e53677
+  sha256: dac3a60ac3b5ffb31bedc0aa741f80103d509752fa2783f0a3241e580a496fb6
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
