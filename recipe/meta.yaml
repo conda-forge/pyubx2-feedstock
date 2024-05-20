@@ -8,6 +8,7 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyubx2-{{ version }}.tar.gz
   sha256: 9c13f524de5845f79d035bda8af1535f7b3b6bd5772afdbff5b5a3d2c0089f2f
+build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
