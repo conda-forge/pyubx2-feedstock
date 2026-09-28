@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyubx2-{{ version }}.tar.gz
-  sha256: db94edcdde2be4b12097b4bba0b7a434e35abfc810f101ef0928dc48c4821a85
+  sha256: 97c1aad4e4a4ce39ea6f55f12387d4719e44d910610c514a034fe71b434c9d00
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   host:
